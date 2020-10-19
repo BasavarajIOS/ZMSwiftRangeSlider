@@ -294,7 +294,7 @@ open class RangeSlider: UIControl {
         CATransaction.commit()
     }
 
-    func position(_ value: Int) -> CGFloat {
+    open func position(_ value: Int) -> CGFloat {
         let index = rangeValues.index(of: value)!
         let count = rangeValues.count
         if index == 0 {
